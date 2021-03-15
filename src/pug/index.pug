@@ -6,7 +6,7 @@ block vars
   - var pageActive = "homepage";
 block content
   .main
-    .custom-block
+    .custom-block.custom-block--top
       .custom-block__inner.page-block
         .homepage-banner
           .homepage-banner__block
@@ -22,7 +22,7 @@ block content
                 a(href="#").product-item__ico
                   include ../img/images/star.svg
                 .product-item__absolute-txt Товар заканчивается!
-                .product-item__img
+                a(href="#").product-item__img
                   picture
                     source(srcset="./img/images/item1.webp" type="image/webp")
                     img(src="./img/images/item1.png" alt="img")
@@ -38,7 +38,7 @@ block content
               .product-item__inner
                 a(href="#").product-item__ico
                   include ../img/images/star.svg
-                .product-item__img
+                a(href="#").product-item__img
                   picture
                     source(srcset="./img/images/item2.webp" type="image/webp")
                     img(src="./img/images/item2.png" alt="img")
@@ -55,7 +55,7 @@ block content
                 a(href="#").product-item__ico
                   include ../img/images/star.svg
                 .product-item__absolute-txt Товар заканчивается!
-                .product-item__img
+                a(href="#").product-item__img
                   picture
                     source(srcset="./img/images/item3.webp" type="image/webp")
                     img(src="./img/images/item3.png" alt="img")
@@ -72,7 +72,7 @@ block content
                 a(href="#").product-item__ico
                   include ../img/images/star.svg
                 .product-item__absolute-txt Товар заканчивается!
-                .product-item__img
+                a(href="#").product-item__img
                   picture
                     source(srcset="./img/images/item4.webp" type="image/webp")
                     img(src="./img/images/item4.png" alt="img")
@@ -83,7 +83,7 @@ block content
                   .product-item__price
                     .product-item__price-sale 1999 грн
                     .product-item__price-actual.accent 999 грн
-          a(href="#").show-more Показать еще
+        a(href="#").show-more Показать еще
     .custom-block
       .custom-block__inner.page-block
         .slider-title Наши бренды
@@ -145,7 +145,7 @@ block content
                 a(href="#").product-item__ico
                   include ../img/images/star.svg
                 .product-item__absolute-txt Товар заканчивается!
-                .product-item__img
+                a(href="#").product-item__img
                   picture
                     source(srcset="./img/images/item1.webp" type="image/webp")
                     img(src="./img/images/item1.png" alt="img")
@@ -161,7 +161,7 @@ block content
               .product-item__inner
                 a(href="#").product-item__ico
                   include ../img/images/star.svg
-                .product-item__img
+                a(href="#").product-item__img
                   picture
                     source(srcset="./img/images/item2.webp" type="image/webp")
                     img(src="./img/images/item2.png" alt="img")
@@ -178,7 +178,7 @@ block content
                 .product-item__ico
                   include ../img/images/star.svg
                 .product-item__absolute-txt Товар заканчивается!
-                .product-item__img
+                a(href="#").product-item__img
                   picture
                     source(srcset="./img/images/item3.webp" type="image/webp")
                     img(src="./img/images/item3.png" alt="img")
@@ -195,7 +195,7 @@ block content
                 .product-item__ico
                   include ../img/images/star.svg
                 .product-item__absolute-txt Товар заканчивается!
-                .product-item__img
+                a(href="#").product-item__img
                   picture
                     source(srcset="./img/images/item4.webp" type="image/webp")
                     img(src="./img/images/item4.png" alt="img")
@@ -206,7 +206,7 @@ block content
                   .product-item__price
                     .product-item__price-sale 1999 грн
                     .product-item__price-actual.accent 999 грн
-          a(href="#").show-more Показать еще
+        a(href="#").show-more Показать еще
     .custom-block
       .custom-block__inner.page-block
         .homepage-banner
@@ -223,7 +223,7 @@ block content
                 a(href="#").product-item__ico
                   include ../img/images/star.svg
                 .product-item__absolute-txt Товар заканчивается!
-                .product-item__img
+                a(href="#").product-item__img
                   picture
                     source(srcset="./img/images/item1.webp" type="image/webp")
                     img(src="./img/images/item1.png" alt="img")
@@ -239,7 +239,7 @@ block content
               .product-item__inner
                 a(href="#").product-item__ico
                   include ../img/images/star.svg
-                .product-item__img
+                a(href="#").product-item__img
                   picture
                     source(srcset="./img/images/item2.webp" type="image/webp")
                     img(src="./img/images/item2.png" alt="img")
@@ -256,7 +256,7 @@ block content
                 .product-item__ico
                   include ../img/images/star.svg
                 .product-item__absolute-txt Товар заканчивается!
-                .product-item__img
+                a(href="#").product-item__img
                   picture
                     source(srcset="./img/images/item3.webp" type="image/webp")
                     img(src="./img/images/item3.png" alt="img")
@@ -273,7 +273,7 @@ block content
                 .product-item__ico
                   include ../img/images/star.svg
                 .product-item__absolute-txt Товар заканчивается!
-                .product-item__img
+                a(href="#").product-item__img
                   picture
                     source(srcset="./img/images/item4.webp" type="image/webp")
                     img(src="./img/images/item4.png" alt="img")
@@ -284,7 +284,7 @@ block content
                   .product-item__price
                     .product-item__price-sale 1999 грн
                     .product-item__price-actual.accent 999 грн
-          a(href="#").show-more Показать еще
+        a(href="#").show-more Показать еще
     .custom-block
       .custom-block__inner.page-block
         .homepage-title Интересное
@@ -347,19 +347,19 @@ block content
                   img(src="./img/images/how4.png" alt="img")
               .info-block__title Крутые места недели
               .info-block__txt Да, вы угадали, будем разбираться в заблуждениях о сексе, пока ... Миф шестой: мёд и грецкие орехи...
-    .custom-block
+    .custom-block.custom-block--mgb200
       .custom-block__inner.page-block
         .homepage-title Сексшоп онлайн - лучший выбор товаров для взрослых в интернете
         .homepage-txt Секс - это не рутинный процесс, а настоящее искусство. Достичь совершенства в нём вам помогут товары для взрослых - приспособления, которые позволяют постичь новые грани удовольствия в постели. А купить товары для взрослых вы можете, не выходя из дома, ведь к вашим услугам наш магазин - сексшоп онлайн.
         .homepage-txt Нередко посещение магазина для взрослых вызывает смущение, а то и стойкий запрет: не каждому хочется, чтобы о его предпочтениях в интимной жизни знали продавцы-консультанты магазина или посетители сексшопа. К тому же, не у всех такой магазин есть поблизости. Чтобы решить обе эти проблемы и купить нужные вам секс-продукты, достаточно заглянуть на наш сайт - магазин сексшоп в интернет-пространстве, где собрано немало интересного.
-        .homepage-title Сексшоп - ваш верный помощник в интимной сфере
+        .homepage-title.homepage-title--mgt70 Сексшоп - ваш верный помощник в интимной сфере
         .homepage-txt Не секрет, что сексуальное удовлетворение - это процесс, который позволяет снять стресс, поднять уровень гормонов счастья в организме, получить положительные эмоции и просто улучшить самочувствие. И наш интернет-магазин для взрослых - ваш помощник на пути к самым ярким оргазмам. Когда вам хочется разнообразия в сексе, когда нужно удивить партнёра или вызвать его желание, когда вы любите экспериментировать или хотите раскрепоститься - во всех этих случаях товары из магазина-сексшопа будут как нельзя кстати.
         ul.homepage-listing
           li.homepage-listing__item Среди ассортимента нашего интернет-магазина для взрослых вы сможете найти не только игрушки для взрослых для реализации ваших фантазий, но и косметику для интимной сферы, необычное бельё, экстравагантный подарок для второй половинки и многое другое.
           li.homepage-listing__item Мы заботимся о репутации нашего сексшопа и тщательно отбираем продукцию для взрослых, представленную в каталоге магазина: все гели для разогрева, вибраторы, снадобья и игрушки имеют сертификаты качества, они безопасны для контакта с кожей и применения в ходе интима.
           li.homepage-listing__item Мы на практике испытываем эффективность наших игрушек для взрослых и всегда готовы предоставить нашим заказчикам полную инструкцию и информацию об особенностях того или иного приспособления. В нашем сексшопе вы сможете получить подробную консультацию анонимно через интернет и узнаете точно, как выбрать игрушки для взрослых, как за ними ухаживать, прежде, чем заказать их.
           li.homepage-listing__item Цена - один из важнейших факторов при любой покупке. Мы стремимся к тому, чтобы купить товары для взрослых в секшопе у нас мог каждый клиент.
-        .homepage-title Почему наш сексшоп онлайн - это удобно?
+        .homepage-title.homepage-title--mgt70  Почему наш сексшоп онлайн - это удобно?
         .homepage-txt Сексшоп в онлайне - это ваша возможность без смущения заказать нужные вам секс-игрушки для взрослых в интернете и получить их на условиях полной конфиденциальности прямо в руки. Мы обеспечиваем доставку из сексшопа курьером, причём каждая посылка собрана таким образом, чтобы упаковка не могла выдать её содержимое. То есть, ваши личные увлечения и фантазии будете знать только вы сами и консультант сексшопа, который собирал ваш заказ.
         .homepage-txt Ещё один аргумент в пользу онлайн секшопа - это цена. Игрушки для взрослых в нашем магазине можно купить дешевле, чем в любой оффлайн-точке продаж. Загляните в каталог нашего магазина-сексшопа - и убедитесь в огромном выборе игрушек и косметики для секса по доступной стоимости.
 

@@ -2,18 +2,22 @@ footer.footer
   .footer__inner.page-block
     .footer__top
       .footer__top-left
-        .footer__list
-          a(href="#").footer__link О нас
-          a(href="#").footer__link Конфиденциальность
-          a(href="#").footer__link Договор оферты
-          a(href="#").footer__link Как пользоваться
-          a(href="#").footer__link Блог
-          a(href="#").footer__link Доставка и оплата
-          a(href="#").footer__link Инструкция
-          a(href="#").footer__link Частые вопросы
-          a(href="#").footer__link Контакты
-          a(href="#").footer__link Гарантии
-          a(href="#").footer__link Сетка размеров
+        .footer__list-row
+          .footer__list-col
+            a(href="#").footer__link О нас
+            a(href="#").footer__link Блог
+            a(href="#").footer__link Контакты
+          .footer__list-col
+            a(href="#").footer__link Конфиденциальность
+            a(href="#").footer__link Доставка и оплата
+            a(href="#").footer__link Гарантии
+          .footer__list-col
+            a(href="#").footer__link Договор оферты
+            a(href="#").footer__link Инструкция
+            a(href="#").footer__link Сетка размеров
+          .footer__list-col
+            a(href="#").footer__link <b>Как пользоваться</b>
+            a(href="#").footer__link Частые вопросы
       .footer__top-right
         a(href="tel:+38(068)318-15-03").footer__link +38(068)318-15-03
         a(href="#").footer__link Киев, Прорезная, 17
@@ -34,18 +38,24 @@ footer.footer
             include ../../img/images/telegram.svg
         .footer__bottom-right
           a(href="#").footer__bottom-right-ico
-            include ../../img/images/new-post.svg
+            picture
+              source(srcset="./img/images/new-post.webp" type="image/webp")
+              img(src="./img/images/new-post.png" alt="img")
           a(href="#").footer__bottom-right-ico
             include ../../img/images/apple-pay.svg
           a(href="#").footer__bottom-right-ico
             include ../../img/images/google-pay.svg
           a(href="#").footer__bottom-right-ico
-            include ../../img/images/visa.svg
+            picture
+              source(srcset="./img/images/visa.webp" type="image/webp")
+              img(src="./img/images/visa.png" alt="img")
           a(href="#").footer__bottom-right-ico
-            include ../../img/images/mastercard.svg
+            picture
+              source(srcset="./img/images/mastercard.webp" type="image/webp")
+              img(src="./img/images/mastercard.png" alt="img")
       .footer__bottom-subtext
-        a(href="#").footer__bottom-subtext support@holodok.shop
-        .footer__bottom-subtext All rights reserved. © 2020.
+        a(href="mailto:support@holodok.shop").footer__bottom-subtext-txt.footer__bottom-subtext-txt--link support@holodok.shop
+        .footer__bottom-subtext-txt All rights reserved. © 2020.
 
 
 
