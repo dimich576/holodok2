@@ -1,5 +1,5 @@
 footer.footer
-  .footer__inner.page-block
+  .footer__inner.page-block.page-block--pd20
     .footer__top
       .footer__top-left
         .footer__list-row
@@ -21,7 +21,7 @@ footer.footer
       .footer__top-right
         a(href="tel:+38(068)318-15-03").footer__link +38(068)318-15-03
         a(href="#").footer__link Киев, Прорезная, 17
-    .footer__middle
+    .footer__middle.footer__middle--displaynone680
       .footer__middle-inner
         .footer__middle-ico
           include ../../img/images/18+.svg
@@ -30,12 +30,14 @@ footer.footer
     .footer__bottom
       .footer__bottom-icons
         .footer__bottom-left
-          a(href="#").footer__bottom-left-ico
-            include ../../img/images/facebook.svg
-          a(href="#").footer__bottom-left-ico
-            include ../../img/images/insagram.svg
-          a(href="#").footer__bottom-left-ico
-            include ../../img/images/telegram.svg
+          .footer__bottom-left-inner
+            a(href="#").footer__bottom-left-ico
+              include ../../img/images/facebook.svg
+            a(href="#").footer__bottom-left-ico
+              include ../../img/images/insagram.svg
+            a(href="#").footer__bottom-left-ico
+              include ../../img/images/telegram.svg
+          a(href="mailto:support@holodok.shop").footer__bottom-subtext-txt.footer__bottom-subtext-txt--link support@holodok.shop
         .footer__bottom-right
           a(href="#").footer__bottom-right-ico
             picture
@@ -53,9 +55,21 @@ footer.footer
             picture
               source(srcset="./img/images/mastercard.webp" type="image/webp")
               img(src="./img/images/mastercard.png" alt="img")
+      .footer__bottom-logo
+        .footer__middle
+          .footer__middle-inner
+            .footer__middle-ico
+              include ../../img/images/18+.svg
+            .footer__middle-ico
+              include ../../img/images/holodok_logo.svg
       .footer__bottom-subtext
-        a(href="mailto:support@holodok.shop").footer__bottom-subtext-txt.footer__bottom-subtext-txt--link support@holodok.shop
         .footer__bottom-subtext-txt All rights reserved. © 2020.
+  .popup-search
+    .popup-search__overlay
+    .popup-search__inner
+      input(type='text', placeholder='Поиск').popup-search__input
+      include ../../img/images/search-close.svg
+
 
 
 

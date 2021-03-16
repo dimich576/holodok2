@@ -145,8 +145,9 @@ gulp.task('clean', () => {
 gulp.task('serve', () => {
   browserSync.init({
     server: {
-      baseDir: 'dist'
-    }
+      baseDir: 'dist',
+    },
+    port: 3010
   });
 })
 
