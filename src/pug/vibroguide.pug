@@ -1,0 +1,56 @@
+extends _layout
+
+block vars
+  - var pageTitle = "guide1";
+  - var pageClass = "guide1";
+  - var pageActive = "guide1";
+block content
+  .main
+    .custom-block.custom-block--top
+      .custom-block__inner.page-block.page-block--pd20
+        .page-title ВИБРАТОРЫ
+        .img-block
+          .img-block__left.img-block__left--padding
+            .homepage-title.homepage-title--white Гайд по вибраторам
+            .img-block__txt Тут вы узнаете про их виды, как их подобрать и как ими пользоваться
+            a(href="#").img-block__link Ближе к телу
+          .img-block__right
+            picture
+              source(srcset="./img/images/vibro-guide.webp" type="image/webp")
+              img(src="./img/images/vibro-guide.png" alt="img")
+    .custom-block
+      .custom-block__inner.page-block
+        .homepage-title Еще статьи про вибраторы
+        .info-block.custom-row
+          .custom-col.custom-col--25.custom-col--100
+            .info-block__item
+              .info-block__img
+                picture
+                  source(srcset="./img/images/how1.webp" type="image/webp")
+                  img(src="./img/images/how1.png" alt="img")
+              .info-block__title Молочные продукты и секс
+              .info-block__txt Да, вы угадали, будем разбираться в заблуждениях о сексе, пока ... Миф шестой: мёд и грецкие орехи...
+          .custom-col.custom-col--25.custom-col--100
+            .info-block__item
+              .info-block__img
+                picture
+                  source(srcset="./img/images/how2.webp" type="image/webp")
+                  img(src="./img/images/how2.png" alt="img")
+              .info-block__title Лучшие позы недели
+              .info-block__txt Да, вы угадали, будем разбираться в заблуждениях о сексе, пока ... Миф шестой: мёд и грецкие орехи...
+          .custom-col.custom-col--25.custom-col--100
+            .info-block__item
+              .info-block__img
+                picture
+                  source(srcset="./img/images/how3.webp" type="image/webp")
+                  img(src="./img/images/how3.png" alt="img")
+              .info-block__title Контрацепция
+              .info-block__txt Медики назвали 10 самых полезных продуктов в мире: перечень ...
+          .custom-col.custom-col--25.custom-col--100
+            .info-block__item
+              .info-block__img
+                picture
+                  source(srcset="./img/images/how4.webp" type="image/webp")
+                  img(src="./img/images/how4.png" alt="img")
+              .info-block__title Крутые места недели
+              .info-block__txt Да, вы угадали, будем разбираться в заблуждениях о сексе, пока ... Миф шестой: мёд и грецкие орехи...

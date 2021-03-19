@@ -1,0 +1,135 @@
+extends _layout
+
+block vars
+  - var pageTitle = "guide1";
+  - var pageClass = "guide1";
+  - var pageActive = "guide1";
+block content
+  .main
+    .custom-block.custom-block--top
+      .custom-block__inner.page-block.page-block--pd20
+        .page-title Совет 1. Игрушки
+        .guides.custom-row
+          .custom-col.custom-col--25
+            .guides__item
+              .guides__txt.guides__txt--media Вибраторы
+              picture
+                source(srcset="./img/images/toys1.webp" type="image/webp")
+                img(src="./img/images/toys1.png" alt="img")
+          .custom-col.custom-col--25
+            .guides__item
+              .guides__txt.guides__txt--media Дилдо
+              picture
+                source(srcset="./img/images/toys2.webp" type="image/webp")
+                img(src="./img/images/toys2.png" alt="img")
+          .custom-col.custom-col--25
+            .guides__item
+              .guides__txt.guides__txt--media Игрушки для мужчин
+              picture
+                source(srcset="./img/images/toys3.webp" type="image/webp")
+                img(src="./img/images/toys3.png" alt="img")
+          .custom-col.custom-col--25
+            .guides__item
+              .guides__txt.guides__txt--media Насадки на член
+              picture
+                source(srcset="./img/images/toys4.webp" type="image/webp")
+                img(src="./img/images/toys4.png" alt="img")
+          .custom-col.custom-col--25
+            .guides__item
+              .guides__txt.guides__txt--media Анальные пробки
+              picture
+                source(srcset="./img/images/toys5.webp" type="image/webp")
+                img(src="./img/images/toys5.png" alt="img")
+          .custom-col.custom-col--25
+            .guides__item
+              .guides__txt.guides__txt--media Анальные игрушки
+              picture
+                source(srcset="./img/images/toys6.webp" type="image/webp")
+                img(src="./img/images/toys6.png" alt="img")
+          .custom-col.custom-col--25
+            .guides__item
+              .guides__txt.guides__txt--smaller.guides__txt--media Вагинальные шарики
+              picture
+                source(srcset="./img/images/toys7.webp" type="image/webp")
+                img(src="./img/images/toys7.png" alt="img")
+          .custom-col.custom-col--25
+            .guides__item
+              .guides__txt.guides__txt--media Страпоны
+              picture
+                source(srcset="./img/images/toys8.webp" type="image/webp")
+                img(src="./img/images/toys8.png" alt="img")
+    .custom-block
+      .custom-block__inner.page-block
+        .homepage-title Рекомендуемые товары
+        .product-list.custom-row
+          .custom-col.custom-col--25
+            .product-item
+              .product-item__inner
+                .product-item__absolute-item.product-item__absolute-item--news Новинка
+                a(href="#").product-item__ico
+                  include ../img/images/star.svg
+                .product-item__absolute-txt Товар заканчивается!
+                a(href="#").product-item__img
+                  picture
+                    source(srcset="./img/images/item1.webp" type="image/webp")
+                    img(src="./img/images/item1.png" alt="img")
+                .product-item__txt Вибратор для клитора и зон G IRIS, сливовый SVAKOM (США)
+                .product-item__bottom
+                  .product-item__rate
+                    a(href="#").product-item__rate-i 23 отзыва
+                  .product-item__price
+                    .product-item__price-sale 5700 грн
+                    .product-item__price-actual.accent 2700 грн
+          .custom-col.custom-col--25
+            .product-item
+              .product-item__inner
+                a(href="#").product-item__ico
+                  include ../img/images/star.svg
+                a(href="#").product-item__img
+                  picture
+                    source(srcset="./img/images/item2.webp" type="image/webp")
+                    img(src="./img/images/item2.png" alt="img")
+                .product-item__txt T DREAM II С ПУЛЬТОМ LRS, МОЖНО ПОД ОДЕЖДУ
+                .product-item__bottom
+                  .product-item__rate
+                    a(href="#").product-item__rate-i
+                  .product-item__price
+                    .product-item__price-sale 4100 грн
+                    .product-item__price-actual.accent 1999 грн
+          .custom-col.custom-col--25
+            .product-item
+              .product-item__inner
+                .product-item__absolute-item.product-item__absolute-item--sale Распродажа
+                .product-item__ico
+                  include ../img/images/star.svg
+                .product-item__absolute-txt Товар заканчивается!
+                a(href="#").product-item__img
+                  picture
+                    source(srcset="./img/images/item3.webp" type="image/webp")
+                    img(src="./img/images/item3.png" alt="img")
+                .product-item__txt ВИБРАТОР ДЛЯ КЛИТОРА И ЗОН G IRIS, СЛИВОВЫЙ SVAKOM (США)
+                .product-item__bottom
+                  .product-item__rate
+                    a(href="#").product-item__rate-i
+                  .product-item__price
+                    .product-item__price-sale 780 грн
+                    .product-item__price-actual.accent 599 грн
+          .custom-col.custom-col--25
+            .product-item
+              .product-item__inner
+                .product-item__absolute-item.product-item__absolute-item--top-sale ТОП продаж
+                .product-item__ico
+                  include ../img/images/star.svg
+                .product-item__absolute-txt Товар заканчивается!
+                a(href="#").product-item__img
+                  picture
+                    source(srcset="./img/images/item4.webp" type="image/webp")
+                    img(src="./img/images/item4.png" alt="img")
+                .product-item__txt ВИБРАТОР ДЛЯ КЛИТОРА И ЗОН G IRIS, СЛИВОВЫЙ SVAKOM (США)
+                .product-item__bottom
+                  .product-item__rate
+                    a(href="#").product-item__rate-i 1 отзыв
+                  .product-item__price
+                    .product-item__price-sale 1999 грн
+                    .product-item__price-actual.accent 999 грн
+        a(href="#").show-more Показать еще

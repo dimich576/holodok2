@@ -1,0 +1,36 @@
+extends _layout
+
+block vars
+  - var pageTitle = "guides";
+  - var pageClass = "guides";
+  - var pageActive = "guides";
+block content
+  .main
+    .custom-block.custom-block--top
+      .custom-block__inner.page-block.page-block--pd20
+        .page-title Как пользоваться
+        .guides.custom-row
+          .custom-col.custom-col--25.custom-col--100
+            .guides__item
+              .guides__txt Совет 1.<br> Игрушки
+              picture
+                source(srcset="./img/images/guide1.webp" type="image/webp")
+                img(src="./img/images/guide1.png" alt="img")
+          .custom-col.custom-col--25.custom-col--100
+            .guides__item
+              .guides__txt Совет 2.<br> Белье
+              picture
+                source(srcset="./img/images/gude2.webp" type="image/webp")
+                img(src="./img/images/gude2.png" alt="img")
+          .custom-col.custom-col--25.custom-col--100
+            .guides__item
+              .guides__txt Совет 3.<br> Секс
+              picture
+                source(srcset="./img/images/guide3.webp" type="image/webp")
+                img(src="./img/images/guide3.png" alt="img")
+          .custom-col.custom-col--25.custom-col--100
+            .guides__item
+              .guides__txt Совет 4.<br> БДСМ
+              picture
+                source(srcset="./img/images/guide4.webp" type="image/webp")
+                img(src="./img/images/guide4.png" alt="img")

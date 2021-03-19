@@ -35,6 +35,8 @@ $(document).ready(function () {
         slidesToScroll: 1,
         dots: false,
         arrows: true,
+        autoplay: true,
+        autoplaySpeed: 3000,
         prevArrow: "<img class='a-left control-c prev slick-prev' src='../img/images/slider-arrow.svg'>",
         nextArrow: "<img class='a-right control-c next slick-next' src='../img/images/slider-arrow.svg'>",
         responsive: [
@@ -81,6 +83,22 @@ $(document).ready(function () {
 
         ]
     });
+
+    $( function() {
+        $( ".js-price-slider" ).slider({
+            range: true,
+            min: 928,
+            max: 4897,
+            values: [ 928, 4897 ],
+            slide: function( event, ui ) {
+                $( "#amount1" ).val(ui.values[0]);
+                $( "#amount2" ).val(ui.values[1]);
+            }
+        });
+        $( "#amount1" ).val($( ".js-price-slider" ).slider( "values", 0 ));
+        $( "#amount2" ).val($( ".js-price-slider" ).slider( "values", 1 ));
+
+    } );
 
     $(document).scroll(function () {
         var top = $(document).scrollTop();
@@ -131,6 +149,32 @@ $(document).ready(function () {
 
     $(document).on('click', '.popup-search__inner svg', function (e) {
         $('.popup-search').removeClass('active');
+    });
+
+    $(document).on('click', '.dropdown__top', function (e) {
+        $(this).next().slideToggle();
+        $(this).children('.dropdown__top-img').toggleClass('hidden');
+    });
+
+    $( ".header__nav-item" ).hover(
+        function() {
+            if($(this).hasClass('is-hover')) {
+                $(this).children('.drop-menu').addClass("hover");
+                $('.header__nav-overlay').addClass("hover");
+            }
+        }, function() {
+            $( this ).children('.drop-menu').removeClass( "hover" );
+            $( '.header__nav-overlay' ).removeClass( "hover" );
+        }
+    );
+
+    $(document).on('click', '.product-item__ico', function (e) {
+        $(this).toggleClass('active');
+    });
+
+    $(document).on('click', '.catalog-filter__dropdown', function (e) {
+        $(this).next().slideToggle();
+        $(this).children('.catalog-filter__dropdown-img').toggleClass('rotated');
     });
 
 

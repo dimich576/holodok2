@@ -1,0 +1,111 @@
+extends _layout
+
+block vars
+  - var pageTitle = "guide1";
+  - var pageClass = "guide1";
+  - var pageActive = "guide1";
+block content
+  .main
+    .custom-block.custom-block--top
+      .custom-block__inner.page-block.page-block--pd20
+        .page-title Совет 3. Секс
+        .guides.custom-row.custom-row--center
+          .custom-col.custom-col--25
+            .guides__item
+              .guides__txt.guides__txt--media.guides__txt--smaller Контрацепция
+              picture
+                source(srcset="./img/images/guide31.webp" type="image/webp")
+                img(src="./img/images/guide31.png" alt="img")
+          .custom-col.custom-col--25
+            .guides__item
+              .guides__txt.guides__txt--media Лубриканты
+              picture
+                source(srcset="./img/images/guide32.webp" type="image/webp")
+                img(src="./img/images/guide32.png" alt="img")
+          .custom-col.custom-col--25
+            .guides__item
+              .guides__txt.guides__txt--media Гигиена и секс игрушки
+              picture
+                source(srcset="./img/images/guide33.webp" type="image/webp")
+                img(src="./img/images/guide33.png" alt="img")
+          .custom-col.custom-col--25
+            .guides__item
+              .guides__txt.guides__txt--media Первый анальный секс
+              picture
+                source(srcset="./img/images/guide34.webp" type="image/webp")
+                img(src="./img/images/guide34.png" alt="img")
+    .custom-block
+      .custom-block__inner.page-block
+        .homepage-title Рекомендуемые товары
+        .product-list.custom-row
+          .custom-col.custom-col--25
+            .product-item
+              .product-item__inner
+                .product-item__absolute-item.product-item__absolute-item--news Новинка
+                a(href="#").product-item__ico
+                  include ../img/images/star.svg
+                .product-item__absolute-txt Товар заканчивается!
+                a(href="#").product-item__img
+                  picture
+                    source(srcset="./img/images/item1.webp" type="image/webp")
+                    img(src="./img/images/item1.png" alt="img")
+                .product-item__txt Вибратор для клитора и зон G IRIS, сливовый SVAKOM (США)
+                .product-item__bottom
+                  .product-item__rate
+                    a(href="#").product-item__rate-i 23 отзыва
+                  .product-item__price
+                    .product-item__price-sale 5700 грн
+                    .product-item__price-actual.accent 2700 грн
+          .custom-col.custom-col--25
+            .product-item
+              .product-item__inner
+                a(href="#").product-item__ico
+                  include ../img/images/star.svg
+                a(href="#").product-item__img
+                  picture
+                    source(srcset="./img/images/item2.webp" type="image/webp")
+                    img(src="./img/images/item2.png" alt="img")
+                .product-item__txt T DREAM II С ПУЛЬТОМ LRS, МОЖНО ПОД ОДЕЖДУ
+                .product-item__bottom
+                  .product-item__rate
+                    a(href="#").product-item__rate-i
+                  .product-item__price
+                    .product-item__price-sale 4100 грн
+                    .product-item__price-actual.accent 1999 грн
+          .custom-col.custom-col--25
+            .product-item
+              .product-item__inner
+                .product-item__absolute-item.product-item__absolute-item--sale Распродажа
+                .product-item__ico
+                  include ../img/images/star.svg
+                .product-item__absolute-txt Товар заканчивается!
+                a(href="#").product-item__img
+                  picture
+                    source(srcset="./img/images/item3.webp" type="image/webp")
+                    img(src="./img/images/item3.png" alt="img")
+                .product-item__txt ВИБРАТОР ДЛЯ КЛИТОРА И ЗОН G IRIS, СЛИВОВЫЙ SVAKOM (США)
+                .product-item__bottom
+                  .product-item__rate
+                    a(href="#").product-item__rate-i
+                  .product-item__price
+                    .product-item__price-sale 780 грн
+                    .product-item__price-actual.accent 599 грн
+          .custom-col.custom-col--25
+            .product-item
+              .product-item__inner
+                .product-item__absolute-item.product-item__absolute-item--top-sale ТОП продаж
+                .product-item__ico
+                  include ../img/images/star.svg
+                .product-item__absolute-txt Товар заканчивается!
+                a(href="#").product-item__img
+                  picture
+                    source(srcset="./img/images/item4.webp" type="image/webp")
+                    img(src="./img/images/item4.png" alt="img")
+                .product-item__txt ВИБРАТОР ДЛЯ КЛИТОРА И ЗОН G IRIS, СЛИВОВЫЙ SVAKOM (США)
+                .product-item__bottom
+                  .product-item__rate
+                    a(href="#").product-item__rate-i 1 отзыв
+                  .product-item__price
+                    .product-item__price-sale 1999 грн
+                    .product-item__price-actual.accent 999 грн
+        a(href="#").show-more Показать еще

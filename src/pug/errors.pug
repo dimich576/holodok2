@@ -1,0 +1,15 @@
+extends _layout
+
+block vars
+  - var pageTitle = "error";
+  - var pageClass = "error";
+  - var pageActive = "error";
+block content
+  .main
+    .custom-block.custom-block--top.custom-block--error
+      .custom-block__inner.page-block.page-block--pd20
+        .error-block
+          .error-block__number 404
+          .error-block__txt страница не найдена
+          .site-btn-container
+            a(href="#").site-btn.site-btn--black На главную

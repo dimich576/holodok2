@@ -1,0 +1,393 @@
+extends _layout
+
+block vars
+  - var pageTitle = "catalog-page";
+  - var pageClass = "catalog-page";
+  - var pageActive = "catalog-page";
+block content
+  .main
+    .custom-block.custom-block--top
+      .custom-block__inner.page-block.page-block--pd20
+        .page-title Анальные игрушки
+        .custom-row.catalog-category-wrap
+          .custom-col.custom-col--25
+            a(href="#").catalog-category
+              .catalog-category__img
+                include ../img/images/anal-vibro.svg
+              .catalog-category__txt Анальные вибраторы
+          .custom-col.custom-col--25
+            a(href="#").catalog-category
+              .catalog-category__img
+                include ../img/images/anal-plug.svg
+              .catalog-category__txt Анальные пробки
+          .custom-col.custom-col--25
+            a(href="#").catalog-category
+              .catalog-category__img
+                include ../img/images/fisting.svg
+              .catalog-category__txt Для фистинга
+          .custom-col.custom-col--25
+            a(href="#").catalog-category
+              .catalog-category__img
+                include ../img/images/anal-balls.svg
+              .catalog-category__txt Цепочки, бусы
+    .custom-block
+      .custom-block__inner.page-block.custom-block__inner--flex
+        .catalog-filter
+          .catalog-filter__inner
+            .catalog-filter__dropdown
+              .catalog-filter__dropdown-txt Тип
+                span (9)
+              .catalog-filter__dropdown-img.rotated
+                include ../img/images/filter-arrow.svg
+            .catalog-filter__dropdown-list
+              .catalog-filter__dropdown-item
+                input(type='checkbox' id='1').catalog-filter__dropdown-checkbox
+                label(for='1').catalog-filter__dropdown-label Комплекты
+              .catalog-filter__dropdown-item
+                input(type='checkbox' id='2').catalog-filter__dropdown-checkbox
+                label(for='2').catalog-filter__dropdown-label Корсеты
+              .catalog-filter__dropdown-item
+                input(type='checkbox' id='3').catalog-filter__dropdown-checkbox
+                label(for='3').catalog-filter__dropdown-label Лакированное белье
+              .catalog-filter__dropdown-item
+                input(type='checkbox' id='4').catalog-filter__dropdown-checkbox
+                label(for='4').catalog-filter__dropdown-label Пеньюары и сорочки
+              .catalog-filter__dropdown-item
+                input(type='checkbox' id='5').catalog-filter__dropdown-checkbox
+                label(for='5').catalog-filter__dropdown-label Платья и юбки
+              .catalog-filter__dropdown-item
+                input(type='checkbox' id='6').catalog-filter__dropdown-checkbox
+                label(for='6').catalog-filter__dropdown-label Ролевые костюмы
+              .catalog-filter__dropdown-item
+                input(type='checkbox' id='7').catalog-filter__dropdown-checkbox
+                label(for='7').catalog-filter__dropdown-label Трусики
+              .catalog-filter__dropdown-item
+                input(type='checkbox' id='8').catalog-filter__dropdown-checkbox
+                label(for='8').catalog-filter__dropdown-label Чулки, Митенки, Колготки
+              .catalog-filter__dropdown-item
+                input(type='checkbox' id='9').catalog-filter__dropdown-checkbox
+                label(for='9').catalog-filter__dropdown-label Бодистокинги и костюмы-сетка
+            .catalog-filter__dropdown
+              .catalog-filter__dropdown-txt Бренды
+                span (26)
+              .catalog-filter__dropdown-img
+                include ../img/images/filter-arrow.svg
+            .catalog-filter__dropdown-list
+              .catalog-filter__dropdown-item
+                input(type='checkbox' id='11').catalog-filter__dropdown-checkbox
+                label(for='11').catalog-filter__dropdown-label Комплекты
+              .catalog-filter__dropdown-item
+                input(type='checkbox' id='21').catalog-filter__dropdown-checkbox
+                label(for='21').catalog-filter__dropdown-label Корсеты
+              .catalog-filter__dropdown-item
+                input(type='checkbox' id='31').catalog-filter__dropdown-checkbox
+                label(for='31').catalog-filter__dropdown-label Лакированное белье
+              .catalog-filter__dropdown-item
+                input(type='checkbox' id='41').catalog-filter__dropdown-checkbox
+                label(for='41').catalog-filter__dropdown-label Пеньюары и сорочки
+              .catalog-filter__dropdown-item
+                input(type='checkbox' id='51').catalog-filter__dropdown-checkbox
+                label(for='51').catalog-filter__dropdown-label Платья и юбки
+              .catalog-filter__dropdown-item
+                input(type='checkbox' id='61').catalog-filter__dropdown-checkbox
+                label(for='61').catalog-filter__dropdown-label Ролевые костюмы
+              .catalog-filter__dropdown-item
+                input(type='checkbox' id='71').catalog-filter__dropdown-checkbox
+                label(for='71').catalog-filter__dropdown-label Трусики
+              .catalog-filter__dropdown-item
+                input(type='checkbox' id='81').catalog-filter__dropdown-checkbox
+                label(for='81').catalog-filter__dropdown-label Чулки, Митенки, Колготки
+              .catalog-filter__dropdown-item
+                input(type='checkbox' id='91').catalog-filter__dropdown-checkbox
+                label(for='91').catalog-filter__dropdown-label Бодистокинги и костюмы-сетка
+            .catalog-filter__price
+              .catalog-filter__dropdown-txt Цена
+              .catalog-filter__slider-amount
+                .catalog-filter__slider-amount-i
+                  label(for="amount1")
+                  input(type="text" id="amount1" readonly)
+                  span
+                .catalog-filter__slider-amount-i
+                  label(for="amount2")
+                  input(type="text" id="amount2" readonly)
+              .catalog-filter__slider.js-price-slider
+            a(href="#").site-btn.site-btn--filter Применить
+            .catalog-filter__dropdown-txt Размер
+              span (3)
+            .catalog-filter__sizes
+              a(href="#").catalog-filter__size-i S
+              a(href="#").catalog-filter__size-i M
+              a(href="#").catalog-filter__size-i L
+            a(href="#").catalog-filter__sizes-link Детали размеров
+            .catalog-filter__dropdown
+              .catalog-filter__dropdown-txt Цвет
+                span (7)
+              .catalog-filter__dropdown-img
+                include ../img/images/filter-arrow.svg
+            .catalog-filter__dropdown-list
+              .catalog-filter__dropdown-item
+                input(type='checkbox' id='12').catalog-filter__dropdown-checkbox
+                label(for='12').catalog-filter__dropdown-label Комплекты
+              .catalog-filter__dropdown-item
+                input(type='checkbox' id='22').catalog-filter__dropdown-checkbox
+                label(for='22').catalog-filter__dropdown-label Корсеты
+              .catalog-filter__dropdown-item
+                input(type='checkbox' id='32').catalog-filter__dropdown-checkbox
+                label(for='32').catalog-filter__dropdown-label Лакированное белье
+              .catalog-filter__dropdown-item
+                input(type='checkbox' id='42').catalog-filter__dropdown-checkbox
+                label(for='42').catalog-filter__dropdown-label Пеньюары и сорочки
+              .catalog-filter__dropdown-item
+                input(type='checkbox' id='52').catalog-filter__dropdown-checkbox
+                label(for='52').catalog-filter__dropdown-label Платья и юбки
+              .catalog-filter__dropdown-item
+                input(type='checkbox' id='62').catalog-filter__dropdown-checkbox
+                label(for='62').catalog-filter__dropdown-label Ролевые костюмы
+              .catalog-filter__dropdown-item
+                input(type='checkbox' id='72').catalog-filter__dropdown-checkbox
+                label(for='72').catalog-filter__dropdown-label Трусики
+              .catalog-filter__dropdown-item
+                input(type='checkbox' id='82').catalog-filter__dropdown-checkbox
+                label(for='82').catalog-filter__dropdown-label Чулки, Митенки, Колготки
+              .catalog-filter__dropdown-item
+                input(type='checkbox' id='92').catalog-filter__dropdown-checkbox
+                label(for='92').catalog-filter__dropdown-label Бодистокинги и костюмы-сетка
+            .catalog-filter__dropdown
+              .catalog-filter__dropdown-txt Метериал
+                span (4)
+              .catalog-filter__dropdown-img
+                include ../img/images/filter-arrow.svg
+            .catalog-filter__dropdown-list
+              .catalog-filter__dropdown-item
+                input(type='checkbox' id='13').catalog-filter__dropdown-checkbox
+                label(for='13').catalog-filter__dropdown-label Комплекты
+              .catalog-filter__dropdown-item
+                input(type='checkbox' id='23').catalog-filter__dropdown-checkbox
+                label(for='23').catalog-filter__dropdown-label Корсеты
+              .catalog-filter__dropdown-item
+                input(type='checkbox' id='33').catalog-filter__dropdown-checkbox
+                label(for='33').catalog-filter__dropdown-label Лакированное белье
+              .catalog-filter__dropdown-item
+                input(type='checkbox' id='43').catalog-filter__dropdown-checkbox
+                label(for='43').catalog-filter__dropdown-label Пеньюары и сорочки
+              .catalog-filter__dropdown-item
+                input(type='checkbox' id='53').catalog-filter__dropdown-checkbox
+                label(for='53').catalog-filter__dropdown-label Платья и юбки
+              .catalog-filter__dropdown-item
+                input(type='checkbox' id='63').catalog-filter__dropdown-checkbox
+                label(for='63').catalog-filter__dropdown-label Ролевые костюмы
+              .catalog-filter__dropdown-item
+                input(type='checkbox' id='73').catalog-filter__dropdown-checkbox
+                label(for='73').catalog-filter__dropdown-label Трусики
+              .catalog-filter__dropdown-item
+                input(type='checkbox' id='83').catalog-filter__dropdown-checkbox
+                label(for='83').catalog-filter__dropdown-label Чулки, Митенки, Колготки
+              .catalog-filter__dropdown-item
+                input(type='checkbox' id='93').catalog-filter__dropdown-checkbox
+                label(for='93').catalog-filter__dropdown-label Бодистокинги и костюмы-сетка
+        .catalog-products
+          .product-list.custom-row
+            .custom-col.custom-col--33
+              .product-item
+                .product-item__inner
+                  a(href="javascript:void(0)").product-item__ico
+                    include ../img/images/star.svg
+                  .product-item__absolute-txt Товар заканчивается!
+                  a(href="#").product-item__img
+                    picture
+                      source(srcset="./img/images/item1.webp" type="image/webp")
+                      img(src="./img/images/item1.png" alt="img")
+                  a(href="#").product-item__txt Вибратор для клитора и зон G IRIS, сливовый SVAKOM (США)
+                  .product-item__bottom
+                    .product-item__rate
+                      a(href="#").product-item__rate-i 23 отзыва
+                    .product-item__price
+                      .product-item__price-sale 5700 грн
+                      .product-item__price-actual.accent 2700 грн
+            .custom-col.custom-col--33
+              .product-item
+                .product-item__inner
+                  a(href="javascript:void(0)").product-item__ico
+                    include ../img/images/star.svg
+                  a(href="#").product-item__img
+                    picture
+                      source(srcset="./img/images/item2.webp" type="image/webp")
+                      img(src="./img/images/item2.png" alt="img")
+                  a(href="#").product-item__txt T DREAM II С ПУЛЬТОМ LRS, МОЖНО ПОД ОДЕЖДУ
+                  .product-item__bottom
+                    .product-item__rate
+                      a(href="#").product-item__rate-i
+                    .product-item__price
+                      .product-item__price-sale 4100 грн
+                      .product-item__price-actual.accent 1999 грн
+            .custom-col.custom-col--33
+              .product-item
+                .product-item__inner
+                  a(href="javascript:void(0)").product-item__ico
+                    include ../img/images/star.svg
+                  .product-item__absolute-txt Товар заканчивается!
+                  a(href="#").product-item__img
+                    picture
+                      source(srcset="./img/images/item3.webp" type="image/webp")
+                      img(src="./img/images/item3.png" alt="img")
+                  a(href="#").product-item__txt ВИБРАТОР ДЛЯ КЛИТОРА И ЗОН G IRIS, СЛИВОВЫЙ SVAKOM (США)
+                  .product-item__bottom
+                    .product-item__rate
+                      a(href="#").product-item__rate-i
+                    .product-item__price
+                      .product-item__price-sale 780 грн
+                      .product-item__price-actual.accent 599 грн
+            .custom-col.custom-col--33
+              .product-item
+                .product-item__inner
+                  a(href="javascript:void(0)").product-item__ico
+                    include ../img/images/star.svg
+                  .product-item__absolute-txt Товар заканчивается!
+                  a(href="#").product-item__img
+                    picture
+                      source(srcset="./img/images/item4.webp" type="image/webp")
+                      img(src="./img/images/item4.png" alt="img")
+                  a(href="#").product-item__txt ВИБРАТОР ДЛЯ КЛИТОРА И ЗОН G IRIS, СЛИВОВЫЙ SVAKOM (США)
+                  .product-item__bottom
+                    .product-item__rate
+                      a(href="#").product-item__rate-i 1 отзыв
+                    .product-item__price
+                      .product-item__price-sale 1999 грн
+                      .product-item__price-actual.accent 999 грн
+            .custom-col.custom-col--33
+              .product-item
+                .product-item__inner
+                  a(href="javascript:void(0)").product-item__ico
+                    include ../img/images/star.svg
+                  .product-item__absolute-txt Товар заканчивается!
+                  a(href="#").product-item__img
+                    picture
+                      source(srcset="./img/images/item4.webp" type="image/webp")
+                      img(src="./img/images/item4.png" alt="img")
+                  a(href="#").product-item__txt ВИБРАТОР ДЛЯ КЛИТОРА И ЗОН G IRIS, СЛИВОВЫЙ SVAKOM (США)
+                  .product-item__bottom
+                    .product-item__rate
+                      a(href="#").product-item__rate-i 1 отзыв
+                    .product-item__price
+                      .product-item__price-sale 1999 грн
+                      .product-item__price-actual.accent 999 грн
+            .custom-col.custom-col--33
+              .product-item
+                .product-item__inner
+                  a(href="javascript:void(0)").product-item__ico
+                    include ../img/images/star.svg
+                  .product-item__absolute-txt Товар заканчивается!
+                  a(href="#").product-item__img
+                    picture
+                      source(srcset="./img/images/item4.webp" type="image/webp")
+                      img(src="./img/images/item4.png" alt="img")
+                  a(href="#").product-item__txt ВИБРАТОР ДЛЯ КЛИТОРА И ЗОН G IRIS, СЛИВОВЫЙ SVAKOM (США)
+                  .product-item__bottom
+                    .product-item__rate
+                      a(href="#").product-item__rate-i 1 отзыв
+                    .product-item__price
+                      .product-item__price-sale 1999 грн
+                      .product-item__price-actual.accent 999 грн
+            .custom-col.custom-col--33
+              .product-item
+                .product-item__inner
+                  a(href="javascript:void(0)").product-item__ico
+                    include ../img/images/star.svg
+                  .product-item__absolute-txt Товар заканчивается!
+                  a(href="#").product-item__img
+                    picture
+                      source(srcset="./img/images/item4.webp" type="image/webp")
+                      img(src="./img/images/item4.png" alt="img")
+                  a(href="#").product-item__txt ВИБРАТОР ДЛЯ КЛИТОРА И ЗОН G IRIS, СЛИВОВЫЙ SVAKOM (США)
+                  .product-item__bottom
+                    .product-item__rate
+                      a(href="#").product-item__rate-i 1 отзыв
+                    .product-item__price
+                      .product-item__price-sale 1999 грн
+                      .product-item__price-actual.accent 999 грн
+            .custom-col.custom-col--33
+              .product-item
+                .product-item__inner
+                  a(href="javascript:void(0)").product-item__ico
+                    include ../img/images/star.svg
+                  .product-item__absolute-txt Товар заканчивается!
+                  a(href="#").product-item__img
+                    picture
+                      source(srcset="./img/images/item4.webp" type="image/webp")
+                      img(src="./img/images/item4.png" alt="img")
+                  a(href="#").product-item__txt ВИБРАТОР ДЛЯ КЛИТОРА И ЗОН G IRIS, СЛИВОВЫЙ SVAKOM (США)
+                  .product-item__bottom
+                    .product-item__rate
+                      a(href="#").product-item__rate-i 1 отзыв
+                    .product-item__price
+                      .product-item__price-sale 1999 грн
+                      .product-item__price-actual.accent 999 грн
+            .custom-col.custom-col--33
+              .product-item
+                .product-item__inner
+                  a(href="javascript:void(0)").product-item__ico
+                    include ../img/images/star.svg
+                  .product-item__absolute-txt Товар заканчивается!
+                  a(href="#").product-item__img
+                    picture
+                      source(srcset="./img/images/item4.webp" type="image/webp")
+                      img(src="./img/images/item4.png" alt="img")
+                  a(href="#").product-item__txt ВИБРАТОР ДЛЯ КЛИТОРА И ЗОН G IRIS, СЛИВОВЫЙ SVAKOM (США)
+                  .product-item__bottom
+                    .product-item__rate
+                      a(href="#").product-item__rate-i 1 отзыв
+                    .product-item__price
+                      .product-item__price-sale 1999 грн
+                      .product-item__price-actual.accent 999 грн
+            .custom-col.custom-col--33
+              .product-item
+                .product-item__inner
+                  a(href="javascript:void(0)").product-item__ico
+                    include ../img/images/star.svg
+                  .product-item__absolute-txt Товар заканчивается!
+                  a(href="#").product-item__img
+                    picture
+                      source(srcset="./img/images/item4.webp" type="image/webp")
+                      img(src="./img/images/item4.png" alt="img")
+                  a(href="#").product-item__txt ВИБРАТОР ДЛЯ КЛИТОРА И ЗОН G IRIS, СЛИВОВЫЙ SVAKOM (США)
+                  .product-item__bottom
+                    .product-item__rate
+                      a(href="#").product-item__rate-i 1 отзыв
+                    .product-item__price
+                      .product-item__price-sale 1999 грн
+                      .product-item__price-actual.accent 999 грн
+            .custom-col.custom-col--33
+              .product-item
+                .product-item__inner
+                  a(href="javascript:void(0)").product-item__ico
+                    include ../img/images/star.svg
+                  .product-item__absolute-txt Товар заканчивается!
+                  a(href="#").product-item__img
+                    picture
+                      source(srcset="./img/images/item4.webp" type="image/webp")
+                      img(src="./img/images/item4.png" alt="img")
+                  a(href="#").product-item__txt ВИБРАТОР ДЛЯ КЛИТОРА И ЗОН G IRIS, СЛИВОВЫЙ SVAKOM (США)
+                  .product-item__bottom
+                    .product-item__rate
+                      a(href="#").product-item__rate-i 1 отзыв
+                    .product-item__price
+                      .product-item__price-sale 1999 грн
+                      .product-item__price-actual.accent 999 грн
+            .custom-col.custom-col--33
+              .product-item
+                .product-item__inner
+                  a(href="javascript:void(0)").product-item__ico
+                    include ../img/images/star.svg
+                  .product-item__absolute-txt Товар заканчивается!
+                  a(href="#").product-item__img
+                    picture
+                      source(srcset="./img/images/item4.webp" type="image/webp")
+                      img(src="./img/images/item4.png" alt="img")
+                  a(href="#").product-item__txt ВИБРАТОР ДЛЯ КЛИТОРА И ЗОН G IRIS, СЛИВОВЫЙ SVAKOM (США)
+                  .product-item__bottom
+                    .product-item__rate
+                      a(href="#").product-item__rate-i 1 отзыв
+                    .product-item__price
+                      .product-item__price-sale 1999 грн
+                      .product-item__price-actual.accent 999 грн
+            a(href="#").show-more Показать еще
